@@ -1,0 +1,78 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index-style.css">
+</head>
+
+<body>
+
+
+    <div class="w-75 mx-auto py-5">
+        <div class="form-group">
+            <label for="productName">productName :</label>
+            <input class="form-control my-3" type="text" name="" id="productName">
+            <small class="text-muted"> productName must be chars only</small>
+        </div>
+        <div class="form-group">
+            <label for="productPrice">productPrice :</label>
+            <input class="form-control my-3" type="number" name="" id="productPrice">
+            <small class="text-muted"> productPrice must be chars only</small>
+
+        </div>
+        <div class="form-group">
+            <label for="productCategory">productCategory :</label>
+            <input class="form-control my-3" type="text" name="" id="productCategory">
+            <small class="text-muted"> productCategory must be chars only</small>
+
+        </div>
+        <div class="form-group">
+            <label for="productDesc">productDesc :</label>
+            <textarea class="form-control my-3" type="text" name="" id="productDesc" name="" id=""></textarea>
+            <small class="text-muted"> productDesc must be chars only</small>
+
+        </div>
+        <button id="mainBtn" onclick=" workProject()" class="btn btn-outline-info my-3"> add Product</button>
+    </div>
+    <div class="w-75 m-auto my-3">
+        <label class="my-3">search here by product Name</label>
+        <input onkeyup="searchProduct(this.value)" class="form-control
+        ">
+    </div>
+    <table class=" table w-75 m-auto text-center">
+        <thead>
+            <th>Index</th>
+
+            <th>Name</th>
+            <th>Price</th>
+            <th>Category</th>
+            <th>Description</th>
+            <th>Update</th>
+            <th>Delete</th>
+
+
+
+        </thead>
+        <tbody id="tableBody">
+
+        </tbody>
+
+    </table>
+
+
+
+
+
+
+
+
+
+
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+
+
+</body>
+
+</html>
